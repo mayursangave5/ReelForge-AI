@@ -1,0 +1,48 @@
+# Python Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# Sensitive credentials & environment files
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+*.pem
+*.key
+client_secrets.json
+token.json
+data/tokens/
+
+# Local tools & large binaries
+.tools/
+*.exe
+*.dll
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+*.log
+
+# Remotion & Node artifacts
+node_modules/
+animation/node_modules/
+.remotion/
+animation/.remotion/
+*.bundle.js
+
+# Data, intermediate runs & render outputs
+data/
+runs/
+output/
+animation/public/media/
+*.db
+*.sqlite
+*.sqlite3
+
+# OS artifacts
+Thumbs.db
+.DS_Store

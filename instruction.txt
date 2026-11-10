@@ -1,0 +1,550 @@
+Project: AI Automated Reels Creator & Publisher
+
+Act as a senior Python developer, AI automation engineer and video production engineer.
+
+I want to build a complete AI-powered automated content creation and publishing system.
+
+MAIN OBJECTIVE
+
+The system must automatically create TWO original animated short videos every day based on currently trending topics and publish them on:
+
+1. Instagram Reels
+2. YouTube Shorts
+
+The entire process should be automated, from discovering trending topics to generating videos, editing, captions and uploading.
+
+1. TRENDING TOPIC RESEARCH
+
+Every day:
+
+* Research currently trending topics.
+* Find interesting and viral content ideas.
+* Use reliable sources and available APIs.
+* Identify topics suitable for short animated videos.
+* Select the two best topics.
+* Avoid repeating previously published topics.
+* Verify factual information before creating scripts.
+
+2. AI SCRIPT GENERATION
+
+For each selected topic:
+
+* Generate an engaging script of approximately 30–60 seconds.
+* Start with a powerful hook in the first 3 seconds.
+* Keep the language simple and engaging.
+* Divide the script into multiple scenes.
+* Include a strong ending.
+* Include a call to action when appropriate.
+
+3. ANIMATION GENERATION
+
+Generate animated videos based on the scripts.
+
+Requirements:
+
+* Vertical 9:16 format.
+* Resolution: 1080 × 1920.
+* Animated visuals.
+* Attractive backgrounds.
+* Smooth transitions.
+* Consistent characters and visual style.
+* Engaging storytelling.
+
+Use an AI video generation API where available.
+
+If an AI video generation API is unavailable, implement an alternative using AI-generated images, motion effects and FFmpeg.
+
+Keep the animation provider modular so I can change providers later.
+
+4. AI VOICEOVER
+
+Generate natural-sounding voiceovers.
+
+Requirements:
+
+* Clear pronunciation.
+* Appropriate emotions.
+* Natural speaking speed.
+* Voice synchronization with scenes.
+
+Allow changing the voice and language through configuration.
+
+5. AUTOMATIC VIDEO EDITING
+
+Use FFmpeg or another suitable video editing library.
+
+Automatically:
+
+* Combine animated scenes.
+* Add voiceovers.
+* Add subtitles.
+* Add background music.
+* Add transitions.
+* Synchronize audio and visuals.
+* Export high-quality MP4 videos.
+
+Ensure background music is licensed for the intended use.
+
+6. CAPTIONS AND HASHTAGS
+
+Generate separate metadata for each platform.
+
+Instagram:
+
+* Engaging caption.
+* Relevant hashtags.
+* Appropriate emojis.
+
+YouTube:
+
+* Catchy title.
+* Description.
+* Relevant hashtags.
+* Appropriate tags.
+
+Do not use misleading titles or unrelated hashtags.
+
+7. AUTOMATIC PUBLISHING
+
+Instagram:
+Use the official Instagram Graph API to publish Reels.
+
+YouTube:
+Use the official YouTube Data API v3 to upload Shorts.
+
+Requirements:
+
+* Upload the correct video.
+* Add platform-specific captions and metadata.
+* Support scheduled publishing.
+* Record upload status.
+* Handle API errors.
+* Avoid duplicate uploads.
+* Save platform post IDs and URLs.
+
+Never bypass platform authentication or publishing restrictions.
+
+8. DAILY AUTOMATION
+
+The system must generate two videos daily.
+
+Create a configurable schedule.
+
+Example:
+
+* 9:00 AM: Generate Reel 1.
+* 5:00 PM: Generate Reel 2.
+
+Allow changing these timings.
+
+9. APPROVAL SYSTEM
+
+Initially, implement approval mode.
+
+After generating each video:
+
+* Save it in the output folder.
+* Generate a preview.
+* Notify me that the video is ready.
+* Wait for approval before uploading.
+
+Provide an option to enable automatic publishing later.
+
+10. PROJECT DASHBOARD
+
+Create a simple dashboard showing:
+
+* Today's trending topics.
+* Generated videos.
+* Pending approvals.
+* Published videos.
+* Instagram upload status.
+* YouTube upload status.
+* Upload history.
+* Errors and logs.
+
+Allow me to approve, reject or regenerate videos.
+
+11. PROJECT STRUCTURE
+
+Create a clean Python project with separate modules for:
+
+* Trend research.
+* Script generation.
+* AI animation.
+* Voice generation.
+* Video editing.
+* Caption generation.
+* Instagram publishing.
+* YouTube publishing.
+* Scheduling.
+* Dashboard.
+* Database and logging.
+
+Use environment variables for API keys and credentials.
+
+Never hardcode API keys or expose credentials.
+
+12. DATABASE
+
+Use SQLite initially.
+
+Store:
+
+* Topic history.
+* Generated scripts.
+* Video paths.
+* Publishing status.
+* Captions.
+* Upload dates.
+* Instagram post IDs.
+* YouTube video IDs.
+* Errors.
+
+13. IMPORTANT DEVELOPMENT RULES
+
+1. First inspect my computer and available development environment.
+2. Explain the required software and API accounts.
+3. Build the project step by step.
+4. Create all required files.
+5. Provide complete working code.
+6. Install dependencies where possible.
+7. Test every module independently.
+8. Test video generation before implementing automatic uploading.
+9. Never pretend an upload succeeded without verifying it.
+10. Never publish anything without approval while approval mode is enabled.
+11. Make the system easy to maintain and expand.
+
+FINAL GOAL
+
+I want a reliable AI content automation system that creates two original, engaging animated reels every day and publishes them to Instagram and YouTube with minimum manual effort.
+
+Start by designing the architecture and project structure. Then implement the project in small, testable stages.
+
+Do not create an unnecessarily complicated system. Prioritize reliability, low operating costs and good video quality.
+
+
+Research affordable and preferably free AI services for:
+1. Trending topic discovery
+2. Script generation
+3. AI image generation
+4. AI video generation
+5. Text-to-speech
+6. Video editing
+
+Compare their free limits, API availability and pricing.
+
+Prioritize low-cost solutions. Do not purchase subscriptions automatically.
+
+
+Now implement the complete video generation engine.
+
+First create one sample animated reel from start to finish.
+
+Include:
+* Script
+* Scene generation
+* Animation
+* Voiceover
+* Subtitles
+* Background music
+* Final MP4 export
+
+Test the final video before proceeding.
+
+Now implement Instagram Reels and YouTube Shorts publishing.
+
+Use official APIs.
+
+Guide me through obtaining API credentials and connecting my accounts.
+
+Implement OAuth authentication securely.
+
+Test publishing with my approval.
+
+Never expose my access tokens or passwords.
+
+Implement the daily scheduler.
+
+Generate two different reels every day.
+
+Use configurable publishing times.
+
+Check previous topics to prevent repetition.
+
+Initially require my approval before publishing.
+
+Provide a setting to enable fully automatic publishing.
+
+Update the AI Animated Reels Creator project with the following language requirements.
+
+LANGUAGE SETTINGS
+
+1. All video voiceovers must be in natural Hindi.
+2. Use Indian Hindi pronunciation and accent.
+3. Generate scripts in simple, conversational Hindi.
+4. Use Devanagari script for Hindi subtitles.
+5. Generate Hindi captions where appropriate.
+6. Keep technical and English terms only when they sound natural in Hindi conversations.
+
+VOICEOVER
+
+* Use a natural-sounding Indian Hindi voice.
+* Prefer an engaging storytelling voice.
+* Use appropriate emotions and expressions.
+* Avoid robotic-sounding narration.
+* Synchronize voiceovers with animated scenes.
+
+VIDEO SETTINGS
+
+* Video format: 9:16.
+* Resolution: 1080 × 1920.
+* Duration: 30–60 seconds.
+* Audio language: Hindi.
+* Subtitle language: Hindi.
+* Export format: MP4.
+
+CONTENT
+
+Generate two different animated reels daily based on trending topics.
+
+Prioritize:
+
+* Interesting facts.
+* Technology.
+* Science.
+* Mystery.
+* Interesting stories.
+* Trending topics.
+* Educational content.
+
+Avoid misinformation, copied videos and copyrighted material.
+
+Make Hindi the default language throughout the application, but keep language settings configurable.
+
+Implement a Viral Content Optimization Engine.
+
+The objective is to maximize organic reach on Instagram Reels
+and YouTube Shorts.
+
+Requirements:
+
+1. Analyze trending topics before selecting content.
+2. Generate powerful hooks within the first 2 seconds.
+3. Create engaging Hindi storytelling scripts.
+4. Optimize videos for audience retention.
+5. Add readable Hindi subtitles.
+6. Avoid lengthy introductions.
+7. Generate platform-specific titles and captions.
+8. Track views, likes, shares, comments and audience retention
+   wherever analytics APIs provide them.
+9. Identify the best-performing topics and formats.
+10. Use historical performance data to improve future content.
+
+Never guarantee viral performance.
+Do not use fake views, bots, engagement manipulation or spam.
+Prioritize original and useful content.
+
+Upgrade My AI Animated Reels Creator
+
+I want to upgrade my existing project into a professional AI video production studio.
+
+Do not immediately start installing random packages.
+
+First research and evaluate the best available OpenCode skills, MCP servers, open-source projects, AI models and APIs.
+
+1. Install and Configure Relevant Skills
+
+Find or create specialized skills for:
+
+* Viral short-form video storytelling.
+* Hindi conversational scriptwriting.
+* Hook generation.
+* Animation and motion graphics.
+* Cinematic video production.
+* Character consistency.
+* Sound design.
+* Hindi voiceover generation.
+* Video editing.
+* Audience retention optimization.
+* Fact checking.
+* Social media analytics.
+
+Use the native OpenCode Agent Skills system.
+
+Create reusable SKILL.md files when suitable existing skills are unavailable.
+
+2. Create Specialized AI Agents
+
+Create these agents:
+
+1. Trend Researcher
+2. Content Strategist
+3. Hindi Scriptwriter
+4. Story Director
+5. Animation Director
+6. Hindi Voice Director
+7. Video Editor
+8. Quality Inspector
+9. Social Media Growth Analyst
+
+Each agent must have a clearly defined responsibility.
+
+Allow agents to collaborate during video production.
+
+3. Advanced Animation
+
+Evaluate and integrate:
+
+* Remotion.
+* ComfyUI.
+* Blender.
+* FFmpeg.
+* Manim where appropriate.
+* Suitable AI image-to-video APIs.
+
+The goal is attractive and professional animation.
+
+Avoid repetitive slideshow-style videos.
+
+Include:
+
+* Cinematic camera movements.
+* Smooth transitions.
+* Animated backgrounds.
+* Character consistency.
+* Appropriate visual effects.
+* Scene-based storytelling.
+
+4. Humanized Hindi Voice
+
+Evaluate:
+
+* ElevenLabs.
+* IndicF5.
+* Other suitable Indian language TTS models.
+
+Requirements:
+
+* Natural Indian Hindi pronunciation.
+* Conversational Hindi.
+* Human-like emotional expression.
+* Appropriate pauses.
+* Natural speaking speed.
+* Different storytelling emotions.
+* Accurate pronunciation.
+
+Avoid robotic narration.
+
+Create a voice testing module so I can compare different voices.
+
+5. Intelligent Content Strategy
+
+Before generating a video:
+
+* Research current trends.
+* Identify audience interests.
+* Study successful short-video formats.
+* Generate multiple topic ideas.
+* Score ideas based on relevance and audience potential.
+* Select the strongest ideas.
+
+Generate original content rather than copying viral videos.
+
+6. Professional Quality Control
+
+Create an independent Quality Inspector agent.
+
+It must check:
+
+* First 3-second hook.
+* Script quality.
+* Hindi grammar.
+* Voice quality.
+* Audio synchronization.
+* Animation quality.
+* Subtitle readability.
+* Video resolution.
+* Copyright risks.
+* Factual accuracy.
+
+If quality is poor, request regeneration before approval.
+
+7. Continuous Improvement
+
+Create an analytics system.
+
+Study previously published videos and identify:
+
+* Best-performing topics.
+* Best hooks.
+* Best video duration.
+* Best storytelling formats.
+* Audience retention patterns.
+* Engagement rates.
+
+Use this information to improve future scripts and videos.
+
+8. Important Instructions
+
+* Prefer affordable and open-source solutions.
+* Avoid unnecessary API expenses.
+* Do not install untrusted skills without inspection.
+* Check project compatibility before installing dependencies.
+* Keep all API keys secure.
+* Do not break existing functionality.
+* Build and test each feature independently.
+
+First produce a technical evaluation report.
+
+Show me:
+
+1. Recommended skills.
+2. Recommended agents.
+3. Recommended APIs.
+4. Installation commands.
+5. Expected costs.
+6. Implementation plan.
+
+Wait for my approval before making major changes.
+IMPORTANT: EXECUTION CONTROL
+
+Do not immediately modify my existing project or install packages.
+
+Start with Phase 1:
+* Inspect my computer and existing project.
+* Research suitable skills, agents, APIs and AI models.
+* Compare costs and compatibility.
+* Identify free and open-source alternatives.
+* Prepare the technical evaluation report.
+
+Do not make major changes or install anything yet.
+
+Show me the complete report and wait for my explicit approval.
+
+After approval, implement the project one phase at a time.
+Test every phase before moving to the next.
+PERMANENT PUBLISHING AUTHORIZATION
+
+I want fully automatic publishing without daily approval requests.
+
+Requirements:
+
+1. Implement OAuth authentication for Instagram and YouTube.
+2. I will authorize both accounts once through their official authentication pages.
+3. Request only the permissions required to upload and publish videos.
+4. Securely store and refresh authorization tokens wherever supported.
+5. Once connected, allow the application to publish videos automatically.
+6. Do not ask for confirmation before every upload.
+7. Automatically publish two reels daily according to my configured schedule.
+8. If an upload fails, log the error and retry safely without creating duplicate posts.
+9. Notify me after successful or failed uploads.
+10. Provide settings to pause publishing, disconnect accounts or revoke authorization.
+
+The application must never request or store my account passwords.
+
+Only publish original videos generated by this application.
+
+If authorization expires, permissions are revoked or platform restrictions prevent publishing, notify me and wait for reconnection.
+
+I explicitly authorize automatic publishing after I complete the initial OAuth setup.
